@@ -23,10 +23,12 @@ public class Book extends BaseEntity{
     private Integer lastPageNumber;
     @OneToOne
     private Image image;
-
+    private Integer totalPage;
 
     @ManyToOne
     @JoinColumn(name="category_id")
     private Category category;
+
+    private Long userId;
 
 }
